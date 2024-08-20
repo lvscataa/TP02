@@ -1,25 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP02</title>
 </head>
-<body>
-     <h1>TP02</h1>
-     <H2>Catalina Petasny - 4<sup>to</sup>1 <sup>ra</sup></H2>
 
-     <h3>1.1 - ¿Qué es una URL?</h3>
+<body>
+    <h1>TP02</h1>
+    <H2>Catalina Petasny - 4<sup>to</sup>1 <sup>ra</sup></H2>
+
+    <h3>1.1 - ¿Qué es una URL?</h3>
     <p>R: Una URL es una cadena de texto que especifica donde encontrarse un recurso (video, imagen, documento, etc)</p>
 
     <h3>1.2 - ¿Qué es una ruta absoluta?</h3>
-    <p>R: Una ruta absoluta es una dirección web que contiene todas la información necesaria para acceder al recurso </p>
+    <p>R: Una ruta absoluta es una dirección web que contiene todas la información necesaria para acceder al recurso
+    </p>
 
     <h3>1.3 - ¿Qué es una url relativa?</h3>
     <p>R: Una URL relativa es una estructura de URL que describe la ruta a un archivo relativo al actual documento.</p>
 
-    <h3>1.4 - ¿</h3>
+    <h3>
+        1.4 - ¿Cual es la diferencia entre una url relativa y una url absoluta?
+    </h3>
+    <p>
+        R: La diferencia de una url relativa y una url absoluta es que la url absoluta contiene todas la información
+        necesaria para acceder al recurso. <br>
+        En cambio, la url relativa es una estructura que describe la ruta a un archivo relativo al actual documento.
+    </p>
+
+    <h3>
+        1.5 - Crear tres enlaces absolutos a tres recursos. Los recursos deben ser PDF, PNG, TXT
+    </h3>
+    <p>
+        R: <br>
+        <a
+            href="https://campus.cet30.edu.ar/pluginfile.php/600903/mod_folder/content/0/unidad%201%20-%20introduccion%20a%20la%20L%C3%B3gica%20-%20javier%20firpo.pdf">unidad
+            4 - leyes logicas y simplificacion - javier firpo.pdf</a> <br>
+        <a href="https://proveedurialr.com.ar/wp-content/uploads/2024/05/frutilla-778x703-1.png">imagen frutilla</a>
+        <br>
+        <a href="https://github.com/zrafa/articulos/blob/master/resumen-de-nuestro-articulo.txt">archivo txt</a>
+
+    </p>
+
+
+    <h3>
+        1.6 - ¿Qué es un directorio? ¿qué relación hay con una carpeta?
+    </h3>
+    <p>
+        R: Un directorio es un archivo en el que dentro de este se pueden guardar más archivos ya sean
+        imagenes,documentos,etc. <br>
+        Una carpeta y un directorio cumplen la misma función ya que en ambos se pueden guardar archivos, documentos de
+        texto, imagenes, etc.
+    </p>
+
+    <h3>
+        1.7 - En la estructura de un proyecto web, ¿a qué se llama directorio raíz? ¿Con qué símbolo se representa?
+    </h3>
+    <p>
+        R: Se denomina directorio raíz a el primer directorio de una jerarquía. Este mismo contiene todos los
+        subdirectorios y se representa con una barra inclinada "(/)"
+    </p>
+
+    <h3>
+        1.8 - Un archivo XLS que deseamos enlazar se encuentra alojado en el servidor de nuestra institución educativa,
+        dentro de la carpeta de recursos compartidos llamada "documentos". <br>
+        Dentro de esta carpeta, hay otra subcarpeta llamada "excel", donde se encuentra específicamente el archivo que
+        necesitamos, llamado "datos_estudiantes.xls". <br>
+        Sabiendo que el protocolo utilizado es https y nuestra institución es el CET Nº30. Armar la url absoluta para
+        dicho archivo.
+    </h3>
+    <p>
+        R: <a
+            href="https://campus.cet30.edu.ar/documentos/excel/datos_estudiantes.xls">https://campus.cet30.edu.ar/documentos/excel/datos_estudiantes.xls</a>
+    </p>
+
+    <h3>
+        1.9 - Una empresa cuyo dominio es xyzlt.com tiene su logo en archivo gif. El logo está <br>
+        identificado bajo el nombre logo. Se encuentra en un host llamado data. Todos los <br>
+        archivos multimedia están en un directorio llamado asset que organiza dentro <br>
+        según el tipo de archivo, para imágenes se utiliza img, para pdf se utiliza pdf y para <br>
+        audios se utiliza audios. Armar la url absoluta.
+    </h3>
+    <p>
+        R: <a href="https://data.xyzlt.com/asset/img/logo.gif">https://data.xyzlt.com/asset/img/logo.gif</a>
+    </p>
+
+    <h3>
+        1.10 - ¿Cuál es el propósito de la etiqueta anchor?
+    </h3>
+
+    <p>
+        R: El proposito de la etiqueta "anchor" es crear enlaces a otras páginas, documentos, recursos, etc. Se
+        representa con (a)
+    </p>
+
+    <h3>
+        1.11 - ¿Qué atributo se utiliza en la etiqueta anchor para especificar la URL a la que debe enlazar?
+    </h3>
+    <p>
+        R: El atributo que utiliza la etiqueta anchor es "href", este atributo proporciona la dirección de la página o
+        recurso (su URL) al navegador.
+    </p>
+
+    <h3>
+        1.12 - ¿Qué sucede si el atributo "href" en la etiqueta anchor está vacío?
+    </h3>
+    <p>
+        R: Lo que pasa cuando el atributo "href" está vacío es que en la pagina cuando queremos entrar a un enlace
+        especifico no se va a poder porque no tiene una dirección.
+    </p>
+
+    <h3>
+        1.13 - ¿Cuál es el uso del atributo "target" en la etiqueta anchor y cuáles son los posibles valores que puede
+        tener?
+    </h3>
+    <p>
+        R: El uso que tiene el atributo "target" en la etiqueta anchor es que especifica en donde mostrar la URL
+        enlazada. <br>
+        Los valores que puede tener son: <br>
+        <i>Self</i>: Carga la url en el contexto actual. <br>
+        <i>_blank</i>: carga la URL en un nuevo contexto de navegación.
+    </p>
+
+    <h3>
+        1.14 - Entonces ¿qué es un hipervínculo?
+    </h3>
+    <p>
+        R: Un hipervínculo o un enlace es una cadena de texto que especifica donde puede encontrarse un recurso.
+    </p>
+
+    <h3>
+        1.15 Actividad Práctica:
+    </h3>
+
+    <h3>
+        📚 Organizar las materias de 4to año <br> <br>
+
+        📁 Paso 1: Crear la carpeta "Materias" en el proyecto actual 📁 <br> <br>
+
+        🤝 Paso 2: Agrupar materias en dos categorías 🤝 <br>
+        Dentro de la carpeta "Materias", crea dos grupos para las materias de 4to año: "Aula" y "Taller". De esta manera <br>
+        podemos categorizar las páginas. <br> <br>
+
+        📄 Paso 3: Crear páginas para cada materia 📄 <br>
+        En cada materia, crear una página. Cada página debe tener: <br> <br>
+
+        🔹 Título de la materia <br>
+        🔹 Enlace para volver al inicio <br> <br>
+
+        📊 Paso 4: Crear el archivo index.html 📊 <br> 
+        En la carpeta "Materias", crea un archivo llamado `index.html`. Aquí irá el listado de todas las materias de 4to
+        año, organizadas por los dos grupos que creaste. <br>
+        En el listado, agrega un hipervínculo para cada materia que te lleve directamente a la página correspondiente. <br><br>
+
+
+        Utiliza las etiquetas que hemos visto como em, strong, img y otras 🎉 <br>
+        ¡Éxitos!
+
+    </h3>
 
 
 </body>
+
 </html>
